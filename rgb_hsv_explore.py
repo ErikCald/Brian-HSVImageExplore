@@ -65,6 +65,8 @@ if argFlip == 'half':
     imgProcess = cv2.resize(imgOriginal, None, fx=0.5, fy=0.5, interpolation = cv2.INTER_AREA)
 elif argFlip == 'quar':
     imgProcess = cv2.resize(imgOriginal, None, fx=0.25, fy=0.25, interpolation = cv2.INTER_AREA)
+elif argFlip == 'eighth':
+    imgProcess = cv2.resize(imgOriginal, None, fx=0.125, fy=0.125, interpolation = cv2.INTER_AREA)
 elif argFlip == 'flip':
     imgProcess = cv2.flip(imgOriginal, 0)
 elif argFlip == 'full':
