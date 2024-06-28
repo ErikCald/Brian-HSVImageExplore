@@ -41,7 +41,9 @@ if not os.path.isfile(input_file):
     sys.exit()
 
 #cap = cv2.VideoCapture(0)
-cv2.namedWindow('step1')
+# cv2.namedWindow('step1')
+cv2.namedWindow("step1", cv2.WINDOW_NORMAL) 
+cv2.setWindowProperty('step1', 0, 1)
 
 #easy assigments
 hh1='Hue High'
